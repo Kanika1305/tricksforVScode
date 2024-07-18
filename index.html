@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="emmet-abbreviations-and-shortcuts-in-vs-code">Emmet Abbreviations and Shortcuts in VS Code</h1>
+<p>This README provides a quick reference guide for using Emmet abbreviations and shortcuts in Visual Studio Code to streamline HTML coding.</p>
+<h2 id="1-basic-html5-boilerplate-">1. Basic HTML5 Boilerplate (!)</h2>
+<ul>
+<li><em>Usage</em>: Type ! and press Tab or Enter to generate a basic HTML5 boilerplate.</li>
+<li><p><em>Result</em>:</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+<h2 id="2-create-sibling-elements">2. &#39;+&#39; : Create Sibling Elements</h2>
+<p>Use the + symbol to create sibling elements.</p>
+<p>Example: div+span</p>
+<p>Result:</p>
+<pre><code class="lang-html"><span class="hljs-section">&lt;div&gt;</span><span class="hljs-section">&lt;/div&gt;</span>
+<span class="hljs-section">&lt;span&gt;</span><span class="hljs-section">&lt;/span&gt;</span>
+</code></pre>
+<h2 id="3-create-child-elements">3. &#39;&gt;&#39; - Create Child Elements</h2>
+<p>Use the &gt; symbol to create child elements.</p>
+<p>Example: ul&gt;li</p>
+<p>Result:</p>
+<pre><code class="lang-html"><span class="hljs-section">&lt;ul&gt;</span>
+  <span class="hljs-section">&lt;li&gt;</span><span class="hljs-section">&lt;/li&gt;</span>
+<span class="hljs-section">&lt;/ul&gt;</span>
+</code></pre>
+<h2 id="4-create-multiple-elements">4. &#39;*&#39; - Create Multiple Elements</h2>
+<p>Use the * symbol to create multiple instances of an element.</p>
+<p>Example: ul&gt;li*3</p>
+<p>Result:</p>
+<pre><code class="lang-html"><span class="hljs-section">&lt;ul&gt;</span>
+  <span class="hljs-section">&lt;li&gt;</span><span class="hljs-section">&lt;/li&gt;</span>
+  <span class="hljs-section">&lt;li&gt;</span><span class="hljs-section">&lt;/li&gt;</span>
+  <span class="hljs-section">&lt;li&gt;</span><span class="hljs-section">&lt;/li&gt;</span>
+<span class="hljs-section">&lt;/ul&gt;</span>
+</code></pre>
+<h2 id="5-elements-with-ids-and-classes">5.  Elements with IDs and Classes</h2>
+<h3 id="-element-with-an-id">&#39;#&#39; : Element with an ID</h3>
+<p>Use the # symbol to create an element with an ID.</p>
+<p>Example: div#container</p>
+<p>Result:</p>
+<pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">id</span>=<span class="hljs-string">"container"</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+<p>### </p>
+<h3 id="-element-with-a-class">&#39; . &#39; - Element with a Class</h3>
+<p>Use the <code>.</code> symbol to create an element with a class.</p>
+<p>Example: <code>div.className</code></p>
+<p>Result:</p>
+<pre><code class="lang-html">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"className"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+</code></pre>
+<h2 id="6-numbering-elements">6. &#39;$&#39; : Numbering Elements</h2>
+<p>Use the $ symbol to create numbered elements.</p>
+<p>Example: ul&gt;li.item$*3</p>
+<p>Result:</p>
+<pre><code class="lang-html">&lt;ul&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+  &lt;li <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"item2"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+  &lt;li <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"item3"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/ul&gt;</span>
+</code></pre>
+<h2 id="7-a-basic-anchor-tag-with-text">7. &#39;a{}&#39; : Basic Anchor Tag with Text</h2>
+<p>Use the a{} syntax to create a basic anchor tag with text.</p>
+<p>Example: a{Click here}</p>
+<p>Result:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>Click here<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+
+</body>
+</html>
